@@ -1,12 +1,17 @@
-var x = random(20);
-var y = random(10);
+var x = 20;
+var y = 600;
 
 function setup() {
-  createCanvas(800,600);
-  background(255);
+  createCanvas(windowWidth,windowHeight);
 }
 
 function draw() {
-  ellipse(10,10,30,30);
+  background(153,230,235);
+
+  ellipse(x++,y--,30,30);
+
+  if (y < 500) {
+    ellipse(x++,x,30,30);
+  }
 
 }
