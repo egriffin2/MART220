@@ -1,0 +1,6 @@
+function Ball() {
+  x = 100;
+  var y = 600;
+  var xspeed = 7;
+  var yspeed = 3;
+}

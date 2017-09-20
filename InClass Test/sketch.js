@@ -1,3 +1,18 @@
+/*var x = 20;
+var y = 600;
+
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+}
+
+function draw() {
+  background(153,230,235);
+
+  ellipse(x++,y--,30,30);
+
+  if (y < 500) {
+    ellipse(x++,x,30,30);
+  }/*/
 
 var x = 100;
 var y = 600;
@@ -10,10 +25,7 @@ function setup () {
 
 function draw() {
   background(135,200,235);
-  //var h = 40;
-  var h = randomGaussian(100,20);
 
-  h = map(h,0,200,50,600);
 //Move the ball according to its speed. from Nature of Code
   x = x + xspeed;
   y = y + yspeed;
@@ -30,8 +42,4 @@ function draw() {
   fill(0);
 //Display the ball at the location (x,y).
   ellipse(x,y,30,30);
-  rect(windowWidth/2,windowHeight-h,40,h,30);
-
-  //text(h,100,100);  checking output of h (commented out because it's ugly)
-
 }
