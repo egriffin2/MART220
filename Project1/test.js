@@ -5,6 +5,13 @@ function Ball() {
   this.yspeed = 3;
 }
 
+Ball.prototype.draw () {
+  stroke(0);
+  fill(0);
+
+  ellipse(x,y,30,30);
+}
+
 Ball.prototype.move () {
   x = x + xspeed;
   y = y + yspeed;
@@ -15,4 +22,5 @@ Ball.prototype.move () {
   if ((y > height) || (y < 600)) {
     yspeed = yspeed * -1;
   }
+
 }
