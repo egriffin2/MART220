@@ -1,3 +1,4 @@
+//failed attempt at ball object
 
 var x = 100;
 var y = 600;
