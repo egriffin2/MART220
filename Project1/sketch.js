@@ -1,9 +1,9 @@
-//failed attempt at ball object
+//failed attempt at ball object, I broke something, had to go back to last Github push
 
 var x = 100;
 var y = 600;
 var xspeed = 7;
-var yspeed = 3;
+var yspeed = 4;
 
 function setup () {
   createCanvas(windowWidth,windowHeight);
