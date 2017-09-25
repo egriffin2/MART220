@@ -1,26 +1,16 @@
-function Ball() {
-  this.x = 100;
-  this.y = 600;
-  this.xspeed = 7;
-  this.yspeed = 3;
-}
+class PVector {
 
-Ball.prototype.draw () {
-  stroke(0);
-  fill(0);
+  var = x;
+  var = y;
+  PVector location = new PVector(100,100);
+  PVector velocity = new PVector(1,3.3);
 
-  ellipse(x,y,30,30);
-}
-
-Ball.prototype.move () {
-  x = x + xspeed;
-  y = y + yspeed;
-
-  if ((x > width) || (x < 0)) {
-    xspeed = xspeed * -1;
+  PVector(x_, y_) {
+    x = x_;
+    y = y_;
   }
-  if ((y > height) || (y < 600)) {
-    yspeed = yspeed * -1;
+  function add(PVector v) {
+    y = y + v.y;
+    x = x + v.x;
   }
-
 }
