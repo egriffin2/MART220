@@ -10,6 +10,8 @@ var yspeed = 4;
 
 function setup () {
   createCanvas(windowWidth,windowHeight);
+  location = new PVector(100,100);
+  velocity = new PVector(2.5,5);
 }
 
 function draw() {
