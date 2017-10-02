@@ -6,14 +6,9 @@ function Mover(x_,y_,size_) {
 
 Mover.prototype.updatePos = function() {
 
-  var mouse = createVector(mouseX, mouseY);
-  this.acc = p5.Vector.sub(mouse, this.loc);
-
-  //this.acc = createVector(random(-1,1), random(-1,1));
-  //this.acc.mult(0.1);
-  this.acc.normalize();
-
-  this.vel.limit(5);
+  this.acc = createVector(random(-1,1), random(-1,1));
+  this.acc.mult(0.1);
+  this.acc.limit(1);
   this.vel.add(this.acc);
   this.loc.add(this.vel);
 
