@@ -1,7 +1,6 @@
 var obj_pos = {r: 0, theta: 0};
 var cart_coor;
 var diam = 10;
-var c = 0.2;
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
@@ -34,7 +33,7 @@ function draw(){
 
   push();
   noStroke();
-  fill(15, 180, 255);
+  fill(15, random(120,230), random(255));
   translate(width/2, height/2);
   //line(0,0, cart_coor.x, cart_coor.y);
   ellipse(cart_coor.x, cart_coor.y, diam);
