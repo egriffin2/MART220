@@ -33,6 +33,8 @@ function draw(){
 
   if (cart_coor.y > 100) {
     diam = diam + diam;
+  } else if (diam > 100) {
+    diam = 10;
   }
 
   push();
