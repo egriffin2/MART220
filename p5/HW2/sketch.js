@@ -31,12 +31,6 @@ function draw(){
     cart_coor.y = obj_pos.r * tan(obj_pos.theta)
   }
 
-  if (cart_coor.y > 100) {
-    diam = diam + diam;
-  } else if (diam > 100) {
-    diam = 10;
-  }
-
   push();
   noStroke();
   fill(15, random(120,230), random(255));
