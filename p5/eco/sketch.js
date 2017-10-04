@@ -1,6 +1,7 @@
 //var mover1;
 var flyArray = [];
 var numFly = 10;
+//var x = randomGaussian(50,15);
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -21,5 +22,5 @@ function setup() {
       flyArray[i].updatePos();
       flyArray[i].display();
   }
-
+    //text(x,100,100);
 }

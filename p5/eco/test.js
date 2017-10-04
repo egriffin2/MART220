@@ -13,7 +13,7 @@ Mover.prototype.updatePos = function() {
   //this.acc.mult(0.1);
   this.acc.normalize();
 
-  this.vel.limit(5);
+  this.vel.limit(15);
   this.vel.add(this.acc);
   this.loc.add(this.vel);
 
